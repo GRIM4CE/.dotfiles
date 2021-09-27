@@ -1,0 +1,13 @@
+[user]
+	email = jleibham@gmail.com
+    name = jleibham
+[alias]
+    a = add
+    aa = add .
+    c = commit -m
+    pl = pull
+    ps = push
+    s = status -sb
+    b = checkout -b
+    co = checkout
+    re = reset
