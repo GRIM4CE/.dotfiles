@@ -6,14 +6,22 @@ set shiftwidth=4
 set expandtab
 set smartindent
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/site/pack/*/start')
+
+" LSP
+Plug 'neovim/nvim-lspconfig'
+
+" Fuzzy Search
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+" Themes
 Plug 'ayu-theme/ayu-vim'
 Plug 'morhetz/gruvbox'
+
 call plug#end()
 
-" Color Scheme ----------------------------------------------------------
+" Themes ----------------------------------------------------------
 
 """ AYU
 set termguicolors     " enable true colors support
@@ -27,7 +35,7 @@ colorscheme ayu
 let mapleader = " "
 
 nnoremap <leader>pv :Vex<CR>
-nnoremap <leader><CR> :so ~/.vimrc<CR>
+nnoremap <leader><CR> :so ~/.config/nvm/init.vim<CR>
 nnoremap <C-p> :GFiles<CR>
 nnoremap <leader>pf :Files<CR> 
 

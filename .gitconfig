@@ -6,8 +6,8 @@
     aa = add .
     c = commit -m
     pl = pull
-    ps = push
+    ps = push -u origin HEAD
     s = status -sb
-    b = checkout -b
+    cob = checkout -b
     co = checkout
     re = reset

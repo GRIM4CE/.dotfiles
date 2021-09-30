@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/jleibham/Code/sandbox/rust'
+let g:netrw_dirhist_6='/home/jleibham/Code/sandbox/rust/guessing_game'
+let g:netrw_dirhist_5='/home/jleibham/Code/sandbox/rust/guessing_game/src'
+let g:netrw_dirhist_4='/home/jleibham/Code/sandbox/rust/guessing_game'
+let g:netrw_dirhist_3='/home/jleibham/Code/work/peak'
+let g:netrw_dirhist_2='/home/jleibham/Code'
+let g:netrw_dirhist_1='/home/jleibham'
+let g:netrw_dirhist_0='/home/jleibham/Code/sandbox/vim-nav-playground'
+let g:netrw_dirhist_9='/home/jleibham'
+let g:netrw_dirhist_8='/home/jleibham/Code/sandbox/vim-nav-playground/src'
