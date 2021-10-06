@@ -10,12 +10,15 @@ call plug#begin('~/.local/share/nvim/site/pack/*/start')
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/nvim-cmp'
 
-" Fuzzy Search
+" Fuzzy
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" Themes
+" Theme
 Plug 'ayu-theme/ayu-vim'
 Plug 'morhetz/gruvbox'
 
@@ -31,14 +34,23 @@ colorscheme ayu
 """ GruvBox
 " colorscheme gruvbox
 
-" MAPPINGS --------------------------------------------------------------- {{{
+" MAPPINGS --------------------------------------------------------
 let mapleader = " "
 
 nnoremap <leader>pv :Vex<CR>
-nnoremap <leader><CR> :so ~/.config/nvm/init.vim<CR>
+nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <C-p> :GFiles<CR>
 nnoremap <leader>pf :Files<CR> 
+nnoremap <C-s> :w<CR> 
 
 inoremap jj <esc>
 
-" }}}
+
+" LSP -------------------------------------------------------------
+set completeopt=menu,menuone,noselect
+
+"lua <<EOF
+
+"require'lspconfig'.rust_analyzer.setup{}
+
+"EOF
