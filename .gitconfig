@@ -1,6 +1,6 @@
 [user]
     email = jleibham@gmail.com
-    name = jleibham
+    name = Jon Leibham
 [alias]
     a = add
     aa = add .
@@ -11,3 +11,5 @@
     cob = checkout -b
     co = checkout
     re = reset
+[init]
+    defaultBranch = main
