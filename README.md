@@ -2,7 +2,7 @@
 
 The configuration files assume that the following frameworks and languages are already installed:
 
-[Volta.sh](https://volta.sh/)
+[volta.sh](https://volta.sh/)
 
 [git](https://git-scm.com/)
 
